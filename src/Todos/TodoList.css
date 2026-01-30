@@ -1,0 +1,5 @@
+.todoList {
+    overflow-y: auto;
+    /* scroll if too many todos */
+    max-height: 70vh;
+}

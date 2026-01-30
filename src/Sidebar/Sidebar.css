@@ -1,0 +1,80 @@
+.list:hover {
+  background-color: #e0e0e0;
+}
+
+.list.active {
+  background-color: #e0e0e0;
+}
+
+.list {
+  transition: .2s;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.list h3 {
+  cursor:default;
+}
+
+.lists-wrapper {
+  min-width: 150px;
+  /* reserve width */
+  min-height: 100%;
+  height: auto;
+  /* take full height of container */
+  background-color: #f0f0f0;
+  /* optional for visual debugging */
+  text-align: center;
+  overflow-y: auto;
+}
+
+.list-actions {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5px 0 auto;
+}
+
+.options {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: center;
+  position: relative;
+  top: 8px;
+
+  margin-left: auto;
+
+  border-radius: 20px;
+  padding: 0;
+}
+
+.options:hover {
+  color: rgb(131, 127, 127);
+}
+
+.list:hover .options{
+  display: inline;
+}
+
+.del {
+  border: solid lightgrey 1px;
+  padding: 0;
+  height: 20px;
+  width: 35px;
+  font-size: 10px;
+  position:relative;
+  visibility: hidden;
+  top: 3px;
+  right: 12px;
+  cursor: pointer;
+}
+
+.del:hover {
+  color: rgba(0, 0, 0, 0.679);
+}
+
+.del.show {
+  visibility: visible;
+  opacity: 1;
+}

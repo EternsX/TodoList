@@ -1,0 +1,63 @@
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+  gap: 8px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+/* Horizontal scrollable icons */
+.icon-row {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 8px 0;
+  margin-top: 10px;
+}
+
+/* optional: style scrollbar for nicer look */
+.icon-row::-webkit-scrollbar {
+  height: 6px;
+}
+.icon-row::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 3px;
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 60px;      /* width of each icon "cell" */
+  padding: 5px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 24px;      /* icon size */
+}
+
+
+
+.icon-name {
+  font-size: 12px;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; /* ... for long names */
+  margin-top: 4px;
+}
+.icon-item:hover {
+  background: #f0f0f0;
+}
+
+.icon-item.selected {
+  border-color: #4169e1;
+  background: #e8edff;
+}
+
+.search-icons.MuiTextField-root {
+  margin-top: 10px;
+}

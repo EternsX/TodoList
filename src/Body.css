@@ -1,0 +1,12 @@
+.body-container {
+  display: flex;        /* side by side layout */
+  height: calc(100vh - 56.53px); /* full viewport minus navbar height */
+  padding-top: 0;       /* optional */
+}
+
+.vertical-line {
+  width: 1px;
+  background-color: lightgrey;
+  height: auto;
+  min-height: 100%;     /* stretch full height of container */
+}

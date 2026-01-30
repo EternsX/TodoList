@@ -1,0 +1,27 @@
+.nav-bar {
+    display: flex;
+    align-items: center;
+    background-color: #4169e1;
+    padding: 10px;
+    color: white;
+}
+
+.title {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.add-list {
+    margin: 0 5px 0 auto;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    transition: background-color .3s; /* smooth transition */
+}
+
+.add-list:hover {
+    cursor: pointer;
+    background-color: #417fff; /* slightly lighter on hover */
+
+}
