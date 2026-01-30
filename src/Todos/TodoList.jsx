@@ -8,7 +8,7 @@ import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { useContext } from "react"
 import { ListContext } from "../../context/ListContext"
-import './TodoLIst.css'
+import './TodoList.css'
 
 export default function TodoList({ todoList }) {
     const { toggleCheck, deleteTodo } = useContext(ListContext);
