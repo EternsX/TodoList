@@ -3,10 +3,17 @@ import globals from 'globals'
 import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 import { defineConfig, globalIgnores } from 'eslint/config'
+import react from '@vitejs/plugin-react'
 
 export default defineConfig([
   globalIgnores(['dist']),
   {
+    plugins: [react()],
+    preview: {
+      port: process.env.PORT || 4173, // use Render's port
+      host: '0.0.0.0',               // bind to all interfaces
+      allowedHosts: ['todolist-obmx.onrender.com'],
+    },
     files: ['**/*.{js,jsx}'],
     extends: [
       js.configs.recommended,
