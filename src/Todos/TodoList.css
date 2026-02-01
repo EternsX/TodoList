@@ -3,3 +3,7 @@
     /* scroll if too many todos */
     max-height: 70vh;
 }
+
+.todo {
+    overflow-y: auto;
+}

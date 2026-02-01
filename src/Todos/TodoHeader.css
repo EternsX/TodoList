@@ -33,10 +33,21 @@
   transition: .2s;
   font-family: 'Inter', sans-serif;  /* your chosen font */
   font-size: 19px;                    /* optional size */
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .header-title:hover {
   background-color: rgba(211, 211, 211, 0.356);
 }
 
+@media (max-width: 768px) {
+  .header-icon {
+    font-size: 1.5rem;
+    padding: 1px 4px 6px 6px;
+  }
+
+  .header-title {
+    font-size: 14px;
+
+  }
+}

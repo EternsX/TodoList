@@ -39,7 +39,7 @@ export default function TodoList({ todoList }) {
                                         inputProps={{ 'aria-labelledby': labelId }}
                                     />
                                 </ListItemIcon>
-                                <ListItemText id={labelId} primary={t.todo} />
+                                <ListItemText className="todo" id={labelId} primary={t.todo} />
                             </ListItemButton>
                         </ListItem>
                     );
